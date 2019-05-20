@@ -1,0 +1,711 @@
+/*RESET*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline; }
+
+/* remember to define focus styles! */
+:focus {
+  outline: 0; }
+
+body {
+  line-height: 1;
+  color: black;
+  background: white; }
+
+ol, ul {
+  list-style: none; }
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse: separate;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: ""; }
+
+blockquote, q {
+  quotes: "" ""; }
+
+/* FIM RESET*/
+/*CORES*/
+/*FONTS*/
+/*text-size*/
+header .barra {
+  background-color: #F1F1F1;
+  border: 2px solid #dfdfdf;
+  width: 100%;
+  height: 32px;
+  font-family: "Open Sans", sans-serif; }
+  header .barra .content-barra {
+    display: flex;
+    position: relative; }
+    header .barra .content-barra .brasil {
+      display: flex;
+      align-items: center;
+      width: 115px;
+      height: 30px;
+      border-right: 2px solid #dfdfdf;
+      border-left: 2px solid #dfdfdf; }
+      header .barra .content-barra .brasil img {
+        width: 42px;
+        padding: 10px; }
+      header .barra .content-barra .brasil p {
+        font-size: 14px;
+        text-transform: uppercase;
+        color: #606060;
+        font-weight: 800; }
+    header .barra .content-barra .servicos {
+      display: flex;
+      align-items: center; }
+      header .barra .content-barra .servicos p {
+        font-size: 14px;
+        color: #606060;
+        font-weight: 800;
+        margin-left: 10px; }
+    header .barra .content-barra .menu-barra {
+      display: flex;
+      position: absolute;
+      right: 0; }
+      header .barra .content-barra .menu-barra .icon-menu {
+        display: none; }
+        header .barra .content-barra .menu-barra .icon-menu i {
+          font-size: 20px;
+          margin-top: 5px;
+          margin-left: 5px; }
+      header .barra .content-barra .menu-barra ul {
+        min-width: 400px;
+        display: flex;
+        flex-direction: row; }
+        header .barra .content-barra .menu-barra ul li {
+          list-style: none;
+          border-right: 2px solid #dfdfdf;
+          height: 30px;
+          padding: 0 15px;
+          display: flex;
+          align-items: center; }
+          header .barra .content-barra .menu-barra ul li a {
+            font-size: 14px;
+            color: #606060;
+            font-weight: 800; }
+        header .barra .content-barra .menu-barra ul:first-child {
+          border-left: 2px solid #dfdfdf; }
+        header .barra .content-barra .menu-barra ul .libras {
+          border: 0; }
+          header .barra .content-barra .menu-barra ul .libras img {
+            width: 25px;
+            height: 28px; }
+
+header .header-azul {
+  height: 195px;
+  background-color: #1659BF; }
+  header .header-azul .menu-conteudo ul {
+    display: flex;
+    margin-top: 10px; }
+    header .header-azul .menu-conteudo ul li a {
+      color: #fff;
+      font-family: Arial;
+      font-size: 12px;
+      margin-right: 20px; }
+      header .header-azul .menu-conteudo ul li a span {
+        background-color: #8FB6F2;
+        padding: 0 4px;
+        color: #1659BF;
+        font-size: 12px; }
+  header .header-azul .box-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; }
+    header .header-azul .box-right .contraste {
+      width: 132px;
+      float: right; }
+      header .header-azul .box-right .contraste p {
+        color: #8FB6F2;
+        font-size: 12px;
+        font-family: Arial;
+        margin-top: 10px;
+        text-transform: uppercase;
+        border-bottom: 1px dashed #8FB6F2;
+        text-align: center;
+        line-height: 2em; }
+    header .header-azul .box-right .social {
+      padding-top: 10px; }
+      header .header-azul .box-right .social a {
+        margin-right: 3px; }
+        header .header-azul .box-right .social a:hover {
+          cursor: pointer; }
+  header .header-azul .name h2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 35px;
+    font-weight: 800;
+    color: #fff;
+    padding-bottom: 10px; }
+  header .header-azul .name h3 {
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 4px; }
+
+header .menu-default {
+  background-color: #0F4098; }
+  header .menu-default .content-menu {
+    display: flex;
+    align-items: center; }
+    header .menu-default .content-menu .icon-menu {
+      margin-right: 10px; }
+      header .menu-default .content-menu .icon-menu a i {
+        color: #fff;
+        font-size: 20px; }
+    header .menu-default .content-menu ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 51px;
+      width: 100%; }
+      header .menu-default .content-menu ul li a {
+        font-size: 12px;
+        font-family: "Open Sans", sans-serif;
+        color: #fff; }
+
+.previsao .container .bg-city {
+  background-image: url("../img/img-santuario.jpg");
+  background-repeat: no-repeat;
+  min-height: 524px;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  .previsao .container .bg-city .busca {
+    display: flex;
+    padding-top: 20px; }
+    .previsao .container .bg-city .busca .local {
+      margin-left: 20px;
+      margin-top: 10px; }
+    .previsao .container .bg-city .busca form {
+      display: flex;
+      width: 550px; }
+      .previsao .container .bg-city .busca form input {
+        background-color: transparent;
+        border: none;
+        height: 60px;
+        min-width: 550px;
+        padding-left: 10px;
+        color: #fff;
+        font-family: "Open Sans", sans-serif;
+        font-size: 45px;
+        font-weight: 800; }
+      .previsao .container .bg-city .busca form ::-webkit-input-placeholder {
+        /* Chrome/Opera/Safari */
+        color: #fff;
+        font-family: "Open Sans", sans-serif;
+        font-size: 45px;
+        font-weight: 800; }
+      .previsao .container .bg-city .busca form ::-moz-placeholder {
+        /* Firefox 19+ */
+        color: #fff;
+        font-family: "Open Sans", sans-serif;
+        font-size: 45px;
+        font-weight: 800; }
+      .previsao .container .bg-city .busca form :-ms-input-placeholder {
+        /* IE 10+ */
+        color: #fff;
+        font-family: "Open Sans", sans-serif;
+        font-size: 45px;
+        font-weight: 800; }
+      .previsao .container .bg-city .busca form :-moz-placeholder {
+        /* Firefox 18- */
+        color: #fff;
+        font-family: "Open Sans", sans-serif;
+        font-size: 45px;
+        font-weight: 800; }
+      .previsao .container .bg-city .busca form button {
+        background-color: transparent;
+        border: none;
+        color: #fff; }
+        .previsao .container .bg-city .busca form button i {
+          font-size: 35px; }
+
+.previsao .detalhes-prev .previsao-hoje {
+  display: flex;
+  justify-content: space-evenly;
+  color: #fff;
+  margin-top: 220px; }
+
+.previsao .detalhes-prev .hoje, .previsao .detalhes-prev .clima, .previsao .detalhes-prev .max, .previsao .detalhes-prev .min, .previsao .detalhes-prev .probabilidade {
+  display: flex;
+  align-items: center; }
+  .previsao .detalhes-prev .hoje img, .previsao .detalhes-prev .clima img, .previsao .detalhes-prev .max img, .previsao .detalhes-prev .min img, .previsao .detalhes-prev .probabilidade img {
+    width: 28px;
+    height: 31px;
+    margin-right: 10px; }
+  .previsao .detalhes-prev .hoje p, .previsao .detalhes-prev .clima p, .previsao .detalhes-prev .max p, .previsao .detalhes-prev .min p, .previsao .detalhes-prev .probabilidade p {
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif; }
+
+.previsao .detalhes-prev .clima img {
+  width: 49px;
+  height: 41px; }
+
+.previsao .detalhes-prev .max img {
+  width: 65px;
+  height: 50px; }
+
+.previsao .previsao-semana {
+  display: flex;
+  height: 140px; }
+  .previsao .previsao-semana .box-dia {
+    display: flex;
+    flex-direction: column;
+    width: 142px;
+    background-color: #1E1E1E;
+    opacity: .8; }
+    .previsao .previsao-semana .box-dia .dia-semana p {
+      color: #fff;
+      font-size: 12px;
+      font-weight: bold;
+      font-family: "Montserrat", sans-serif;
+      padding: 15px 0;
+      text-align: center; }
+    .previsao .previsao-semana .box-dia:hover {
+      opacity: 1; }
+  .previsao .previsao-semana .temperatura {
+    flex-direction: column;
+    align-items: center; }
+    .previsao .previsao-semana .temperatura p {
+      color: #fff;
+      font-size: 26px;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 800;
+      padding: 5px 0;
+      text-align: center; }
+    .previsao .previsao-semana .temperatura img {
+      width: 56px;
+      height: 40px;
+      color: #fff;
+      margin: 0 auto;
+      display: flex; }
+  .previsao .previsao-semana .active {
+    background-color: #1659BF;
+    width: 260px; }
+    .previsao .previsao-semana .active .temperatura {
+      display: flex;
+      flex-direction: row;
+      justify-content: center; }
+      .previsao .previsao-semana .active .temperatura img {
+        margin: 0;
+        order: 2;
+        width: 69px;
+        height: 58px; }
+      .previsao .previsao-semana .active .temperatura p {
+        font-size: 69px;
+        order: 1; }
+
+.destaque {
+  margin-top: 90px; }
+  .destaque #slide-destaque .carousel-inner .carousel-item {
+    height: 470px; }
+    .destaque #slide-destaque .carousel-inner .carousel-item .carousel-caption {
+      background-color: #fff;
+      color: #000;
+      font-family: "Montserrat", sans-serif;
+      right: 0;
+      left: 0;
+      padding: 0;
+      bottom: 36px; }
+      .destaque #slide-destaque .carousel-inner .carousel-item .carousel-caption p {
+        color: #000;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 29px;
+        text-align: left;
+        border: 1px solid #000;
+        padding: 10px 30px; }
+
+.sidebar {
+  width: 260px;
+  margin-top: 90px;
+  margin-bottom: 90px;
+  float: right;
+  /*Depoimentos*/ }
+  .sidebar .nav-tabs {
+    border: 0; }
+    .sidebar .nav-tabs .nav-item {
+      width: 130px; }
+      .sidebar .nav-tabs .nav-item .nav-link {
+        color: #000;
+        font-size: 16px;
+        font-weight: bold;
+        font-family: "Montserrat", sans-serif;
+        text-transform: uppercase;
+        padding: 5px 10px;
+        border: 0;
+        border-bottom: 3px solid #DFDFDF; }
+      .sidebar .nav-tabs .nav-item .active {
+        border-bottom: 3px solid #1659BF; }
+  .sidebar .tab-content .tab-pane .agenda-box {
+    display: flex;
+    margin: 30px 0; }
+    .sidebar .tab-content .tab-pane .agenda-box .info {
+      border-left: 2px solid #1659BF;
+      margin-left: 10px;
+      padding-left: 10px; }
+      .sidebar .tab-content .tab-pane .agenda-box .info h3 {
+        font-size: 14px;
+        font-weight: bold;
+        font-family: "Montserrat", sans-serif;
+        text-transform: uppercase;
+        color: #1659BF; }
+      .sidebar .tab-content .tab-pane .agenda-box .info p.data {
+        font-family: "Montserrat", sans-serif;
+        font-size: 10px;
+        font-weight: 300;
+        margin-top: 5px; }
+  .sidebar .testimonial-carousel {
+    background-color: #F1F1F1;
+    padding: 10px 20px;
+    margin-top: 45px;
+    height: 350px; }
+    .sidebar .testimonial-carousel h2 {
+      font-size: 16px;
+      font-weight: bold;
+      font-family: "Montserrat", sans-serif;
+      text-transform: uppercase;
+      border-bottom: 2px solid #dfdfdf;
+      padding-bottom: 20px;
+      margin-bottom: 10px; }
+      .sidebar .testimonial-carousel h2 img {
+        position: relative;
+        top: 12px;
+        padding-right: 10px; }
+    .sidebar .testimonial-carousel .carousel-inner .carousel-item .testimonial p {
+      font-size: 14px;
+      font-weight: 300;
+      font-family: "Montserrat", sans-serif;
+      text-align: center;
+      line-height: 1.5em;
+      margin-bottom: 15px;
+      padding: 0 10px;
+      margin-top: 30px; }
+    .sidebar .testimonial-carousel .carousel-inner .carousel-item .testimonial .avatar {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 10px; }
+      .sidebar .testimonial-carousel .carousel-inner .carousel-item .testimonial .avatar img {
+        width: 76px;
+        height: 76px; }
+    .sidebar .testimonial-carousel .carousel-inner .carousel-item .testimonial h4 {
+      font-size: 14px;
+      font-weight: 300;
+      font-family: "Montserrat", sans-serif;
+      text-align: center; }
+    .sidebar .testimonial-carousel .carousel-inner .carousel-item .testimonial h6 {
+      font-size: 14px;
+      font-weight: bold;
+      font-family: "Montserrat", sans-serif;
+      text-align: center; }
+    .sidebar .testimonial-carousel .carousel-control-prev .icon-prev i, .sidebar .testimonial-carousel .carousel-control-prev .icon-next i, .sidebar .testimonial-carousel .carousel-control-next .icon-prev i, .sidebar .testimonial-carousel .carousel-control-next .icon-next i {
+      color: #000;
+      font-size: 25px; }
+
+.content-participantes h2 {
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase; }
+  .content-participantes h2 img {
+    position: relative;
+    top: 7px;
+    margin-right: 5px; }
+
+.content-participantes .participantes {
+  display: flex;
+  flex-wrap: wrap; }
+  .content-participantes .participantes .box-img {
+    margin: 20px 30px; }
+
+.mapa {
+  width: 100%; }
+  .mapa h2 {
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-bottom: 20px; }
+    .mapa h2 img {
+      position: relative;
+      top: 7px; }
+
+footer {
+  height: 480px;
+  background-color: #1659BF;
+  padding-top: 40px; }
+  footer .container {
+    display: flex;
+    justify-content: space-between; }
+    footer .container .double-box .box-footer {
+      padding-left: 20px;
+      border-left: 1px dashed #fff;
+      margin-right: 20px;
+      height: fit-content; }
+      footer .container .double-box .box-footer h3 {
+        font-weight: bold;
+        font-family: "Montserrat", sans-serif;
+        text-transform: uppercase;
+        font-size: 16px;
+        color: #fff; }
+      footer .container .double-box .box-footer ul li {
+        line-height: 2em; }
+        footer .container .double-box .box-footer ul li a {
+          font-family: "Open Sans", sans-serif;
+          font-weight: 300;
+          color: #fff;
+          font-size: 14px; }
+    footer .container .double-box .second-box {
+      padding-left: 20px;
+      border-left: 1px dashed #fff;
+      margin: 10px 20px 10px 0;
+      height: fit-content; }
+      footer .container .double-box .second-box h3 {
+        font-weight: bold;
+        font-family: "Montserrat", sans-serif;
+        text-transform: uppercase;
+        font-size: 16px;
+        color: #fff; }
+      footer .container .double-box .second-box ul li {
+        line-height: 2em; }
+        footer .container .double-box .second-box ul li a {
+          font-family: "Open Sans", sans-serif;
+          font-weight: 300;
+          color: #fff;
+          font-size: 14px; }
+    footer .container .box-footer {
+      padding-left: 20px;
+      border-left: 1px dashed #fff;
+      margin-right: 20px;
+      height: fit-content; }
+      footer .container .box-footer h3 {
+        font-weight: bold;
+        font-family: "Montserrat", sans-serif;
+        text-transform: uppercase;
+        font-size: 16px;
+        color: #fff; }
+      footer .container .box-footer ul li {
+        line-height: 2em; }
+        footer .container .box-footer ul li a {
+          font-family: "Open Sans", sans-serif;
+          font-weight: 300;
+          color: #fff;
+          font-size: 14px; }
+  footer .mini-footer {
+    height: 100px;
+    background-color: #0042B1;
+    margin-top: 25px; }
+    footer .mini-footer .container img {
+      margin-top: 30px; }
+
+/*responsivo*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+  header .barra .content-barra .menu-barra ul .icon-menu {
+    display: flex; }
+  header .barra .content-barra .menu-barra ul li {
+    display: none; }
+  header .barra .content-barra .menu-barra ul .libras {
+    display: flex;
+    position: absolute;
+    right: 0; }
+  header .header-azul .container {
+    max-width: 100%; }
+  header .header-azul .name h2 {
+    min-width: 550px; }
+  header .menu-default .content-menu {
+    padding: 15px; }
+    header .menu-default .content-menu ul {
+      display: none; }
+  /*previsao*/
+  .previsao .container {
+    max-width: 100%;
+    padding: 0; }
+  /*conteudo*/
+  .midle .container {
+    max-width: 100%; }
+  .content-participantes .participantes .box-img {
+    margin: 20px 10px; }
+    .content-participantes .participantes .box-img img {
+      width: 155px; } }
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  header .barra .content-barra .menu-barra ul .icon-menu {
+    display: flex; }
+  header .barra .content-barra .menu-barra ul li {
+    display: none; }
+  header .header-azul .container {
+    max-width: 100%; }
+    header .header-azul .container .menu-conteudo {
+      display: none; }
+  header .header-azul .name h2 {
+    min-width: 550px; }
+  header .header-azul .box-right .contraste {
+    width: 100%; }
+  header .menu-default .container {
+    max-width: 100%; }
+    header .menu-default .container .content-menu {
+      padding: 15px; }
+      header .menu-default .container .content-menu ul {
+        display: none; }
+  /*previsao*/
+  .previsao .container {
+    max-width: 100%;
+    padding: 0; }
+  .previsao .detalhes-prev .max p, .previsao .detalhes-prev .min p, .previsao .detalhes-prev .probabilidade p {
+    text-align: center; }
+  /*conteudo*/
+  .midle .container {
+    max-width: 100%; }
+  .sidebar {
+    display: none; }
+  .content-participantes .participantes .box-img {
+    margin: 20px 25px; }
+  footer {
+    height: 165px; }
+    footer .container .box-footer, footer .container .double-box {
+      display: none; } }
+
+@media (max-width: 575.98px) {
+  header .barra .content-barra .menu-barra ul .icon-menu {
+    display: flex; }
+  header .barra .content-barra .menu-barra ul li {
+    display: none; }
+  header .header-azul .container {
+    max-width: 100%; }
+    header .header-azul .container .menu-conteudo {
+      display: none; }
+    header .header-azul .container .social {
+      display: none; }
+  header .header-azul .name h2 {
+    font-size: 30px; }
+  header .header-azul .box-right .contraste {
+    width: 100%; }
+  header .menu-default .container {
+    max-width: 100%; }
+    header .menu-default .container .content-menu {
+      padding: 15px; }
+      header .menu-default .container .content-menu ul {
+        display: none; }
+  /*previsao*/
+  .previsao .container {
+    max-width: 100%;
+    padding: 0; }
+    .previsao .container .bg-city {
+      position: relative; }
+      .previsao .container .bg-city .busca .local {
+        display: none;
+        margin-left: 0; }
+      .previsao .container .bg-city .busca form {
+        width: 230px; }
+        .previsao .container .bg-city .busca form input {
+          min-width: 230px;
+          color: #fff;
+          font-family: "Open Sans", sans-serif;
+          font-size: 18px;
+          font-weight: 800; }
+        .previsao .container .bg-city .busca form ::-webkit-input-placeholder {
+          /* Chrome/Opera/Safari */
+          color: #fff;
+          font-family: "Open Sans", sans-serif;
+          font-size: 18px;
+          font-weight: 800; }
+        .previsao .container .bg-city .busca form ::-moz-placeholder {
+          /* Firefox 19+ */
+          color: #fff;
+          font-family: "Open Sans", sans-serif;
+          font-size: 18px;
+          font-weight: 800; }
+        .previsao .container .bg-city .busca form :-ms-input-placeholder {
+          /* IE 10+ */
+          color: #fff;
+          font-family: "Open Sans", sans-serif;
+          font-size: 20px;
+          font-weight: 800; }
+        .previsao .container .bg-city .busca form :-moz-placeholder {
+          /* Firefox 18- */
+          color: #fff;
+          font-family: "Open Sans", sans-serif;
+          font-size: 18px;
+          font-weight: 800; }
+        .previsao .container .bg-city .busca form button {
+          padding: 0; }
+          .previsao .container .bg-city .busca form button i {
+            font-size: 20px; }
+  .previsao .detalhes-prev .max p, .previsao .detalhes-prev .min p, .previsao .detalhes-prev .probabilidade p {
+    text-align: center; }
+  .previsao .previsao-semana {
+    position: absolute;
+    top: 0;
+    right: 0;
+    flex-direction: column; }
+    .previsao .previsao-semana .box-dia {
+      border-bottom: 1px solid #2d2d2d; }
+      .previsao .previsao-semana .box-dia .dia-semana p {
+        padding: 10px 0; }
+      .previsao .previsao-semana .box-dia .temperatura {
+        flex-direction: row;
+        display: flex;
+        justify-content: center; }
+        .previsao .previsao-semana .box-dia .temperatura img {
+          order: 2;
+          margin: 0; }
+        .previsao .previsao-semana .box-dia .temperatura p {
+          order: 1; }
+    .previsao .previsao-semana .active {
+      width: 142px; }
+      .previsao .previsao-semana .active .dia-semana p {
+        padding: 15px 0; }
+      .previsao .previsao-semana .active .temperatura {
+        flex-direction: row; }
+        .previsao .previsao-semana .active .temperatura p {
+          font-size: 26px; }
+        .previsao .previsao-semana .active .temperatura img {
+          width: 49px;
+          height: 38px;
+          margin-bottom: 5px; }
+  .previsao .detalhes-prev .previsao-hoje {
+    display: none; }
+  /*conteudo*/
+  .midle .container {
+    max-width: 100%; }
+  /*destaque*/
+  .destaque #slide-destaque .carousel-inner .carousel-item .carousel-caption {
+    bottom: 106px; }
+  .sidebar {
+    display: none; }
+  .content-participantes .participantes {
+    justify-content: center; }
+    .content-participantes .participantes .box-img {
+      margin: 20px 5px; }
+  footer {
+    height: 165px; }
+    footer .container .box-footer, footer .container .double-box {
+      display: none; } }
+
+@media (max-width: 375px) {
+  .content-participantes .participantes .box-img img {
+    width: 135px; } }

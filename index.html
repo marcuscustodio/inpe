@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Centro de Previsão de Tempo e Estudos Climáticos - INPE</title>
+</head>
+<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css"> 
+    <!-- fonts-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800|Open+Sans:400,700,800&display=swap" rel="stylesheet">
+    <!--estilo-->
+    <link rel="stylesheet" href="css/style.css">
+
+   
+	<body>
+	
+	<header>
+		<div class="barra">
+			<div class="container">
+				<div class="content-barra">
+					<div class="brasil">
+						<img src="img/brasil-flag.svg" alt="Brasil">
+						<p>brasil</p>
+					</div>
+
+					<div class="servicos">
+						<p>Serviços</p>
+					</div>
+
+					<div class="menu-barra">
+						<ul>
+							<span class="icon-menu"><i class="fas fa-bars"></i></span>
+							<li>
+								<a href="#">Participe</a>
+							</li>
+							<li>
+								<a href="#">Acesso à informação</a>
+							</li>
+							<li>
+								<a href="#">Legislação</a>
+							</li>
+							<li>
+								<a href="#">Canais</a>
+							</li>
+							<li class="libras">
+								<img src="img/libras.png" alt="Libras">
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div><!-- fim barra-->
+
+		<div class="header-azul">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-md-8">
+						<div class="menu-conteudo">
+							<ul>
+								<li>
+									<a href="#">Ir para o conteudo <span>1</span></a>
+								</li>
+								<li>
+									<a href="#">Ir para o menu <span>2</span></a>
+								</li>
+								<li>
+									<a href="#">Ir para o rodapé <span>4</span></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4">
+						<div class="box-right">	
+							<div class="contraste">
+								<p>Alto contraste</p>
+							</div>
+							<div class="social">
+								<a href="#"><img src="img/facebook.png" alt="Facebook"></a>
+								<a href="#"><img src="img/twitter.png" alt="twitter"></a>
+								<a href="#"><img src="img/youtube.png" alt="YouTube"></a>
+								<a href="#"><img src="img/rss.png" alt="Feed"></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="name">
+							<div class="colg-lg-8 col-md-8">
+							<h2>Centro de Previsão de Tempo e Estudos Climáticos</h2>
+							<h3>Instituto Nacional de Pesquisas Espaciais</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<nav class="menu-default">
+			<div class="container">
+				<div class="content-menu">
+					<div  class="icon-menu">
+						<a href="#"><i class="fas fa-align-justify"></i></a>
+					</div>
+					<ul>
+						<li>
+							<a href="#">Tempo</a>
+						</li>
+						<li>
+							<a href="#">Clima</a>
+						</li>
+						<li>
+							<a href="#">Previsão Numérica</a>
+						</li>
+						<li>
+							<a href="#">Satélite</a>
+						</li>
+						<li>
+							<a href="#">Ondas</a>
+						</li>
+						<li>
+							<a href="#">Dados Observacionais</a>
+						</li>
+						<li>
+							<a href="#">Instrumentação Metereológica</a>
+						</li>
+						<li>
+							<a href="#">Qualidade do Ar</a>
+						</li>
+						<li>
+							<a href="#">Pós Graduação</a>
+						</li>
+						<li>
+							<a href="#"><img src="img/diversidade.png" alt=""></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<section class="previsao">
+		<div class="container">
+			<div class="bg-city">
+				<div class="busca">
+					<div class="local">
+						<img src="img/location.png" alt="">
+					</div>
+					<form action="#">
+						<input type="text" name="busca" placeholder="Aparecida do Norte, SP">
+						<button> <i class="fas fa-search"></i></button>
+					</form>
+				</div>
+
+				<div class="detalhes-prev">
+					<div class="previsao-hoje">
+
+						<div class="hoje">
+							<img src="img/calendar.png" alt="">
+							<p>Hoje</p>
+						</div>
+
+						<div class="clima">
+							<img src="img/sun.png" alt="">
+							<p>Ensolarado</p>
+						</div>
+
+						<div class="max">
+							<img src="img/temp.png" alt="">
+							<p>Mínima: 15</p>
+						</div>
+
+						<div class="min">
+							<p>Máxima: 25</p>
+						</div>
+
+						<div class="probabilidade">
+							<p>Probabilidade de chuva: 30%</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="previsao-semana">
+					
+					<div class="box-dia active">
+						<div class="dia-semana">
+							<p>Segunda-feira</p>
+						</div>
+						<div class="temperatura">
+							<img src="img/big-sun.png" alt="">
+							<p>20°</p>
+							
+						</div>
+					</div>
+
+					<div class="box-dia">
+						<div class="dia-semana">
+							<p>Terça-feira</p>
+						</div>
+						<div class="temperatura">
+							<img src="img/cloudy.png" alt="">
+							<p>18°</p>
+							
+						</div>
+					</div>
+
+					<div class="box-dia">
+						<div class="dia-semana">
+							<p>Quarta-feira</p>
+						</div>
+						<div class="temperatura">
+							<img src="img/rain	y.png" alt="">
+							<p>11°</p>
+							
+						</div>
+					</div>
+
+					<div class="box-dia">
+						<div class="dia-semana">
+							<p>Quinta-feira</p>
+						</div>
+						<div class="temperatura">
+							<img src="img/cloud.png" alt="">
+							<p>17°</p>
+							
+						</div>
+					</div>
+
+					<div class="box-dia">
+						<div class="dia-semana">
+							<p>Sexta-feira</p>
+						</div>
+						<div class="temperatura">
+							<img src="img/cloudy.png" alt="">
+							<p>20°</p>
+							
+						</div>
+					</div>
+
+					<div class="box-dia">
+						<div class="dia-semana">
+							<p>Sábado</p>
+						</div>
+						<div class="temperatura">
+							<img src="img/rainy.png" alt="">
+							<p>15°</p>
+							
+						</div>
+					</div>
+
+					<div class="box-dia">
+						<div class="dia-semana">
+							<p>Domingo</p>
+						</div>
+						<div class="temperatura">
+							<img src="img/sun-blue.png" alt="">
+							<p>25°</p>
+							
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+		
+	</section>
+
+	<section class="midle">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-md-8">
+					<div class="destaque">
+						<div id="slide-destaque" class="carousel slide" data-ride="carousel">
+						  <div class="carousel-inner">
+						    <div class="carousel-item active">
+						      <img class="d-block w-100" src="img/slide1.jpg" alt="slide1">
+						      <div class="carousel-caption d-md-block">
+						          <p>"Feature Based Analysis of Atmospheric and Ocean eddies" Dr Kevin Hodges e dra Liang Guo, National Centre for Atmospheric  Science, Reading, UK</p>
+						       </div>
+						    </div>
+						    
+						  </div>
+						  <a class="carousel-control-prev" href="#slide-destaque" role="button" data-slide="prev">
+						    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						    <span class="sr-only">Previous</span>
+						  </a>
+						  <a class="carousel-control-next" href="#slide-destaque" role="button" data-slide="next">
+						    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+						    <span class="sr-only">Next</span>
+						  </a>
+						</div>
+					</div>
+					
+					<div class="content-participantes">
+						<h2><img src="img/pin.png" alt="">QUEM PARTICIPOU DOS CURSOS NO CPETEC</h2>
+						<div class="participantes">
+
+							<div class="box-img">
+								<img src="img/ufrgs.jpg" alt="">
+							</div>
+
+							<div class="box-img">
+								<img src="img/cnen.jpg" alt="">
+							</div>
+
+							<div class="box-img">
+								<img src="img/ipmet.jpg" alt="">
+							</div>
+
+							<div class="box-img">
+								<img src="img/petrobras.jpg" alt="">
+							</div>
+
+							<div class="box-img">
+								<img src="img/globo.jpg" alt="">
+							</div>
+
+							<div class="box-img">
+								<img src="img/usp-logo.jpg" alt="">
+							</div>
+
+						</div>
+					</div><!-- fim participantes-->
+
+				</div>
+
+				<div class="col-lg-4 col-md-4">
+					<div class="sidebar">
+						<ul class="nav nav-tabs" id="myTab" role="tablist">
+						  <li class="nav-item">
+						    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">
+						    	<img src="img/min-calendar.jpg" alt="">Agenda</a>
+						  </li>
+						  <li class="nav-item">
+						    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">
+						    	<img src="img/cursos.jpg" alt="">Cursos</a>
+						  </li>
+						</ul>
+
+						<div class="tab-content" id="myTabContent">
+						  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+						  	
+						  	<div class="agenda-box">
+						  		<div class="image">
+						  			<img src="img/img-side.jpg" alt="">
+						  		</div>
+
+						  		<div class="info">
+							  		<h3>ELAC 2019</h3>
+							  		<p class="data">22 0 19 de janeiro</p>
+						  		</div>
+
+						  	</div>
+
+						  	<div class="agenda-box">
+						  		<div class="image">
+						  			<img src="img/news-2.jpg" alt="">
+						  		</div>
+
+						  		<div class="info">
+							  		<h3>ELAC 2019</h3>
+							  		<p class="data">22 0 19 de janeiro</p>
+						  		</div>
+
+						  	</div>
+
+						  	<div class="agenda-box">
+						  		<div class="image">
+						  			<img src="img/news-3.jpg" alt="">
+						  		</div>
+
+						  		<div class="info">
+							  		<h3>ELAC 2019</h3>
+							  		<p class="data">22 0 19 de janeiro</p>
+						  		</div>
+
+						  	</div>
+
+						  	<div class="agenda-box">
+						  		<div class="image">
+						  			<img src="img/news-4.jpg" alt="">
+						  		</div>
+
+						  		<div class="info">
+							  		<h3>ELAC 2019</h3>
+							  		<p class="data">22 0 19 de janeiro</p>
+						  		</div>
+
+						  	</div>
+
+
+						  </div>
+						  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+						  	<div class="agenda-box">
+						  		<div class="image">
+						  			<img src="img/img-side.jpg" alt="">
+						  		</div>
+
+						  		<div class="info">
+							  		<h3>ELAC 2019</h3>
+							  		<p class="data">22 0 19 de janeiro</p>
+						  		</div>
+
+						  	</div>
+
+						  	<div class="agenda-box">
+						  		<div class="image">
+						  			<img src="img/news-2.jpg" alt="">
+						  		</div>
+
+						  		<div class="info">
+							  		<h3>ELAC 2019</h3>
+							  		<p class="data">22 0 19 de janeiro</p>
+						  		</div>
+
+						  	</div>
+
+						  	<div class="agenda-box">
+						  		<div class="image">
+						  			<img src="img/news-3.jpg" alt="">
+						  		</div>
+
+						  		<div class="info">
+							  		<h3>ELAC 2019</h3>
+							  		<p class="data">22 0 19 de janeiro</p>
+						  		</div>
+
+						  	</div>
+
+						  	<div class="agenda-box">
+						  		<div class="image">
+						  			<img src="img/news-4.jpg" alt="">
+						  		</div>
+
+						  		<div class="info">
+							  		<h3>ELAC 2019</h3>
+							  		<p class="data">22 0 19 de janeiro</p>
+						  		</div>
+
+						  	</div>
+						  </div>
+						</div>
+
+						<!--depoimento-->
+						<div class="wrapper-carousel-fix">
+
+						   <!-- Carousel Wrapper -->
+						   <div id="carousel-example-1" class="carousel no-flex testimonial-carousel slide carousel-fade" data-ride="carousel"
+						     data-interval="false">
+						     <h2><img src="img/dep.png" alt="">Depoimentos</h2>
+						     <!--Slides-->
+						     <div class="carousel-inner" role="listbox">
+						       <!--First slide-->
+						       <div class="carousel-item active">
+						         <div class="testimonial">
+						           <!--Avatar-->
+						           
+						           <!--Content-->
+						           <p>
+						             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.
+						           </p>
+						           <div class="avatar mx-auto">
+						             <img src="img/john-doe.png" class="rounded-circle img-fluid"
+						               alt="First sample avatar image">
+						           </div>
+						           <h4>John Doe</h4>
+						           <h6>CEO</h6>
+						           <!--Review-->
+						       
+						         </div>
+						       </div>
+						       <!--First slide-->
+						       <div class="carousel-item">
+						         <div class="testimonial">
+						           <!--Avatar-->
+						           
+						           <!--Content-->
+						           <p>
+						             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.
+						           </p>
+						           <div class="avatar mx-auto">
+						             <img src="img/john-doe.png" class="rounded-circle img-fluid"
+						               alt="First sample avatar image">
+						           </div>
+						           <h4>Josepf Doe</h4>
+						           <h6>CEO</h6>
+						           <!--Review-->
+						       
+						         </div>
+						       </div>
+						     </div>
+						     <!--Slides-->
+						     <!--Controls-->
+						     <a class="carousel-control-prev left carousel-control" href="#carousel-example-1" role="button"
+						       data-slide="prev">
+						       <span class="icon-prev" aria-hidden="true"><i class="fas fa-chevron-left"></i></span>
+						       <span class="sr-only">Previous</span>
+						     </a>
+						     <a class="carousel-control-next right carousel-control" href="#carousel-example-1" role="button"
+						       data-slide="next">
+						       <span class="icon-next" aria-hidden="true"><i class="fas fa-chevron-right"></i></span>
+						       <span class="sr-only">Next</span>
+						     </a>
+						     <!--Controls-->
+						   </div>
+						   <!-- Carousel Wrapper -->
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-lg-12 col-md-12">
+					<div class="mapa">
+						<h2><img src="img/pin.png" alt=""> Nossa Localização</h2>
+						<div class="content-map">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3681.3878070197393!2d-45.0014338844225!3d-22.67660293540028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9d8a7f43a45733%3A0x4f001467597ad545!2sINPE!5e0!3m2!1spt-BR!2sbr!4v1558201456027!5m2!1spt-BR!2sbr" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+		</div>
+	</section>
+
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-md-8">
+					
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<footer>
+		<div class="container">
+			<div class="box-footer">
+				<h3>menu</h3>
+				<ul>
+					<li>
+						<a href="#">Tempo</a>
+					</li>
+					<li>
+						<a href="#">Clima</a>
+					</li>
+					<li>
+						<a href="#">Previsão Numérica</a>
+					</li>
+					<li>
+						<a href="#">Satélite</a>
+					</li>
+					<li>
+						<a href="#">Ondas</a>
+					</li>
+					<li>
+						<a href="#">Dados Observacionais</a>
+					</li>
+					<li>
+						<a href="#">Instrumentação Metereológica</a>
+					</li>
+					<li>
+						<a href="#">Qualidade do Ar</a>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="double-box">
+				<div class="box-footer">
+					<h3>Sobre</h3>
+					<ul>
+						<li>
+							<a href="#">Sobre o CPTEC</a>
+						</li>
+						<li>
+							<a href="#">Quem é quem</a>
+						</li>
+						<li>
+							<a href="#">Perguntas Frequentes</a>
+						</li>
+						<li>
+							<a href="#">Serviços ao Usuário (pdf)</a>
+						</li>
+						<li>
+							<a href="#">Biblioteca</a>
+						</li>
+						<li>
+							<a href="#">Fale Conosco</a>
+						</li>
+						<li>
+							<a href="#">Trabalhe conosco</a>
+						</li>
+						
+					</ul>
+				</div>
+				<div class="second-box">
+					<h3>Pesquisa</h3>
+					<ul>
+						<li>
+							<a href="">Pós Graduação</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="double-box">
+				<div class="second-box">
+					<h3>Infraestrutura e TI</h3>
+					<ul>
+						<li>
+							<a href="">Supercomputador</a>
+						</li>
+					</ul>
+				</div>
+				<div class="box-footer">
+					<h3>Sobre</h3>
+					<ul>
+						<li>
+							<a href="#">Sobre o CPTEC</a>
+						</li>
+						<li>
+							<a href="#">Quem é quem</a>
+						</li>
+						<li>
+							<a href="#">Perguntas Frequentes</a>
+						</li>
+						<li>
+							<a href="#">Serviços ao Usuário (pdf)</a>
+						</li>
+						<li>
+							<a href="#">Biblioteca</a>
+						</li>
+						<li>
+							<a href="#">Fale Conosco</a>
+						</li>
+						<li>
+							<a href="#">Trabalhe conosco</a>
+						</li>
+						
+					</ul>
+				</div>
+			</div>
+
+			<div class="double-box">
+				<div class="box-footer">
+					<h3>Redes Sociais</h3>
+					<ul>
+						<li>
+							<a href="#">Facebook</a>
+						</li>
+						<li>
+							<a href="#">YouTUbe</a>
+						</li>
+						<li>
+							<a href="#">Twitter</a>
+						</li>
+						<li>
+							<a href="#">Instagram</a>
+						</li>
+						<li>
+							<a href="#">SoundCloud</a>
+						</li>
+						
+					</ul>
+				</div>
+
+				<div class="second-box">
+					<h3>Aplicativos</h3>
+					<ul>
+						<li>
+							<a href="">Android</a>
+						</li>
+						<li>
+							<a href="">iOS</a>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="mini-footer">
+			<div class="container">
+				<img src="img/acesso-informacao.png" alt="">
+			</div>
+		</div>
+	</footer>
+
+
+	
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+	</body>
+</html>
